@@ -1,0 +1,70 @@
+\documentclass[tcc2, pos-defesa, english, brazil]{packages/ufgrc}
+
+\usepackage{rotating}
+\usepackage[all,knot,arc,import,poly]{xy}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+
+\lstset{
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green},
+    stringstyle=\color{red},
+    numbers=none,
+    frame=single,
+    tabsize=2,
+    captionpos=b,
+    language=C++
+}
+
+\titulo{Monitoramento das Emissões de CO2 na Agricultura: Desenvolvimento e Implementação de uma Rede de Nós Sensoriais Baseada em Redes Mesh}
+\autor[JACINTO, W. B.]{Weleson Batista Jacinto}
+\genero{M}
+\orientador[Orientador]{Prof. Dr.}{Tércio Alberto Santos Filho}
+\data{01}{01}{2026}
+
+\membrobanca{Dr. Sergio Francisco da Silva}{Universidade Federal de Catalão}
+\membrobanca{Dr. Ricardo Couto Antunes da Rocha}{Universidade Federal de Catalão}
+
+
+% RESUMOS
+% ---
+
+% Resumo em PORTUGUÊS
+% conter no máximo 500 palavras
+% conter no mínimo 1 e no máximo 5 palavras-chave (obrigatoriamente separadas por vírgula)
+\textoresumo[brazil]{O monitoramento das emissões de dióxido de carbono (CO2) é crucial para enfrentar as mudanças climáticas e promover a sustentabilidade na agricultura. O CO2, embora essencial para a fotossíntese, contribui para o aquecimento global quando suas concentrações aumentam devido a atividades humanas. Este estudo visa desenvolver e implementar um nó sensorial para monitoramento em tempo real das emissões de CO2 em áreas agrícolas, utilizando tecnologias de sensores e redes mesh com o protocolo ESP-MESH e microcontroladores ESP8266. O trabalho é dividido em várias seções: a introdução apresenta a importância do monitoramento de CO2 para mitigar as mudanças climáticas e destaca o papel do mercado de carbono. A fundamentação teórica aborda conceitos de monitoramento ambiental, tecnologias de sensores, emissões de CO2 na agricultura, mercado de carbono e redes mesh. A metodologia inclui a revisão bibliográfica, desenvolvimento do protótipo, configuração da rede de sensores, coleta e análise de dados, e proposição de medidas de mitigação. Os resultados esperados incluem a identificação de principais fontes de emissão e o desenvolvimento de modelos de estimativa de emissões. A pesquisa destaca a importância de tecnologias emergentes no monitoramento das emissões e sua contribuição para práticas agrícolas sustentáveis e políticas públicas eficazes.}{Emissões de CO2, Agricultura, Monitoramento, Mudanças climáticas, Nó sensorial}
+
+
+% resumo em INGLÊS
+% conter no máximo 500 palavras
+% conter no mínimo 1 e no máximo 5 palavras-chave (obrigatoriamente separadas por vírgula)
+\textoresumo[english]{Monitoring carbon dioxide (CO2) emissions is crucial for addressing climate change and promoting sustainability in agriculture. CO2, while essential for photosynthesis, contributes to global warming when its concentrations increase due to human activities. This study aims to develop and implement a sensor node for real-time CO2 emissions monitoring in agricultural areas, utilizing sensor technologies and mesh networks with the ESP-MESH protocol and ESP8266 microcontrollers. The work is structured into several sections: the introduction highlights the importance of CO2 monitoring for climate change mitigation and the role of the carbon market. The theoretical background covers environmental monitoring concepts, sensor technologies, CO2 emissions in agriculture, carbon market, and mesh networks. The methodology involves a literature review, prototype development, sensor network setup, data collection and analysis, and mitigation measures proposal. Expected results include identifying major emission sources and developing emission estimation models. The research emphasizes the importance of emerging technologies in emissions monitoring and their contribution to sustainable agricultural practices and effective public policies.}{CO2 emissions, Agriculture, Monitoring, Climate change, Sensory node}
+
+\hypersetup{
+    colorlinks=true
+}
+
+\begin{document}
+
+\textual
+
+\chapter{Introdução}
+\label{chapter:introducao}
+\input{PFC2/tex/pre-textual/introducao}
+
+\chapter{Fundamentação Teórica}
+\label{chapter:fundamentacao}
+\input{PFC2/tex/pre-textual/fundamentacao}
+
+\postextual
+
+\bibliography{references}
+
+\input{tex/glossario}
+\glsaddall
+\printglossaries
+
+\end{document}
